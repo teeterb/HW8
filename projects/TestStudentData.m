@@ -144,7 +144,7 @@ classdef TestStudentData < matlab.unittest.TestCase
                     data  = StudentData(last, first, mi, id,homework);
                 catch ME
                     validdata = false;
-                    %Printing vectors proved to be difficult
+                    %Printing vectors proved to be difficult as hell
                     cprintf('r', '\n%s\n%s %s %s. %s\n', ME.message, last, first, mi ,id);
                     cprintf('r',' %d \n',homework);
                     switch ME.message
